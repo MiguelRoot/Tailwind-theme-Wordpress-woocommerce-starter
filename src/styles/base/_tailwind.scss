@@ -1,0 +1,37 @@
+@use "tailwindcss/base";
+/*
+ * uncomment if adding custom base styles
+@import "./custom-base-styles.css";
+*/
+
+@use "tailwindcss/components";
+/*
+ * uncomment if adding custom commponents
+@import "./custom-components.css";
+*/
+
+@use "tailwindcss/utilities";
+/*
+ * uncomment if adding custom utilities
+@import "./custom-utilities.css";
+*/
+
+/* admin bar fix */
+body.admin-bar {
+  max-height: calc(100vh - 32px);
+}
+
+:root {
+  --primary-10: #fdfbff;
+  --primary-50: #faf6fe;
+  --primary-100: #f4e9fe;
+  --primary-200: #ebd8fc;
+  --primary-300: #dcb9f9;
+  --primary-400: #c68bf5;
+  --primary-500: #b05fed;
+  --primary-600: #a652e2;
+  --primary-700: #862dc3;
+  --primary-800: #7129a0;
+  --primary-900: #5c2380;
+  --primary-950: #3f0d5e;
+}

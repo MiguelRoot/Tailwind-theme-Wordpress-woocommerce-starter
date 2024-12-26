@@ -1,0 +1,8 @@
+@use "base/base";
+@use "base/tailwind";
+
+// components
+@use "./components/menu-header.scss";
+
+//
+@use "./hard.scss"; // components styles

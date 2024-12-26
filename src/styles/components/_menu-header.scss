@@ -1,0 +1,22 @@
+.icon--menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  stroke-width: 6;
+}
+
+.icon-group {
+  transform: translateX(0);
+  // transition: transform var(--nav-duration) var(--ease);
+}
+
+.icon--menu {
+  stroke: var(--primary-100);
+}
+
+.icon--close {
+  stroke: var(--primary-200);
+  transform: translateX(-100%);
+}

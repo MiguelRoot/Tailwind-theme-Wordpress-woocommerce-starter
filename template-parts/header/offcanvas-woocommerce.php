@@ -23,7 +23,7 @@ if ( is_account_page() || is_checkout() ) {
 } else { ?>
 
 <!-- drawer component -->
-<div id="drawer-example" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
+<div id="drawer-example" class="fixed top-admin top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
    <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
       X
    </button>
@@ -43,8 +43,9 @@ if ( is_checkout() || is_cart() ) {
  // Do nothing
 } else { ?>
 
+
   <!-- drawer component -->
-  <div id="drawer-right-example" class="fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-full md:w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
+  <div id="drawer-right-example" class="fixed top-admin right-0 z-50 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-full md:w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
       <!-- <div class="offcanvas-header">
         <span class="h5 offcanvas-title"><?= apply_filters('bootscore/offcanvas/cart/title', __('Cart', 'bootscore')); ?></span>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

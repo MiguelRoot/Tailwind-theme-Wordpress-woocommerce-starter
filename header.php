@@ -40,7 +40,7 @@ defined('ABSPATH') || exit;
     <?php dynamic_sidebar('top-bar'); ?>
   <?php endif; ?>  
 
-  <header id="masthead" class="sticky top-0 z-50 bg-gray-50 bg-primary-base text-sm" role="banner">
+  <header id="masthead" class="top-0 bg-gray-50 bg-primary-base text-sm" role="banner">
 
     <nav id="nav-main" class="max-w-screen-2xl mx-auto">
 
@@ -53,12 +53,12 @@ defined('ABSPATH') || exit;
         </a>
 
         <!-- Offcanvas Navbar -->
-        <div class="flex gap-5 font-semibold" tabindex="-1" id="offcanvas-navbar">
+        <div class="flex font-semibold" id="menu-drawer">
           <!-- <div class="">
             <span class=""><?= apply_filters('bootscore/offcanvas/navbar/title', __('Menu', 'bootscore')); ?></span>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div> -->
-          <div class="">
+          <!-- <div class=""> -->
 
             <!-- Bootstrap 5 Nav Walker Main Menu -->
             <?php get_template_part('template-parts/header/main-menu'); ?>
@@ -68,7 +68,7 @@ defined('ABSPATH') || exit;
               <?php dynamic_sidebar('top-nav-2'); ?>
             <?php endif; ?>
 
-          </div>
+          <!-- </div> -->
         </div>
 
         <div class="flex buttonsxd">
@@ -87,21 +87,7 @@ defined('ABSPATH') || exit;
           ?>
 
           <!-- Navbar Toggler -->
-          <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
-              <svg class="icon--menu-toggle" viewBox="0 0 60 30">
-                <g class="icon-group">
-                  <g class="icon--menu">
-                    <path d="M 6 0 L 54 0" />
-                    <path d="M 6 15 L 54 15" />
-                    <path d="M 6 30 L 54 30" />
-                  </g>
-                  <g class="icon--close">
-                    <path d="M 15 0 L 45 30" />
-                    <path d="M 15 30 L 45 0" />
-                  </g>
-                </g>
-              </svg>
-          </button>
+           <button data-menu-active="text-white" class="lg:hidden" id="menu-btn"></button>
 
         </div><!-- .header-actions -->
 

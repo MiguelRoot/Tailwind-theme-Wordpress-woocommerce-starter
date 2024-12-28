@@ -11,6 +11,18 @@ module.exports = {
     "!./vendor/**",
     "!./dist/**",
     "./node_modules/flowbite/**/*.js",
+    {
+      raw: "",
+      transform: (content) => {
+        const regex = /data-menu-active="([^"]+)"/g;
+        let match;
+        let classes = "";
+        while ((match = regex.exec(content)) !== null) {
+          classes += ` ${match[1]}`;
+        }
+        return classes;
+      },
+    },
   ],
   safelist: [
     "text-center",

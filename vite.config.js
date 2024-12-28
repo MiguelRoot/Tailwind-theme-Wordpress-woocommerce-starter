@@ -87,6 +87,14 @@ export default defineConfig({
     },
   },
 
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "./src/styles/variable.scss" as *;`,
+      },
+    },
+  },
+
   // required for in-browser template compilation
   // https://v3.vuejs.org/guide/installation.html#with-a-bundler
   resolve: {
